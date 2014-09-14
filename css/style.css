@@ -21,24 +21,24 @@ html, body {
 }
 
 .shadow {
-  text-shadow: 0 0 5px rgba(0,0,0,0.75);
+	text-shadow: 0 0 5px rgba(0,0,0,0.75);
 }
 
 .button {
-  background: transparent;
-  padding: 15px 20px 15px 20px;
-  border-radius: 5px;
-  border: 2px solid white;
-  color: white;
-  font-size: 15px;
-  outline:none;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
+	background: transparent;
+	padding: 15px 20px 15px 20px;
+	border-radius: 5px;
+	border: 2px solid white;
+	color: white;
+	font-size: 15px;
+	outline:none;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
 }
 
 #view-on-github:active {
-  margin-top: 2px;
+	margin-top: 2px;
 }
 
 .page-container {
@@ -48,9 +48,9 @@ html, body {
 }
 
 .buttons {
-  position: relative;
-  display: inline-block;
-  top: 50px;
+	position: relative;
+	display: inline-block;
+	top: 50px;
 }
 
 
@@ -75,30 +75,31 @@ html, body {
 	width: 100%;
 	height: 100%;
 }
+/* Colors
+================*/
 
+.default-color {
+	background: rgb(235, 222, 222);
+}
+
+.reverse-color {
+	background: rgb(54, 54, 54);
+}
+
+/* Containers
+================*/
 .page-body {
 	width: 100%;
-	background: rgb(235, 222, 222);
+	padding: 50px 0;
 }
 
 .page-grid {
 	padding: 15px;
+	margin: 0 auto;
 }
 
-
-@media(max-width: 768px) {
-	.page-grid {
-		width: 95%;
-	}
-}
-@media(min-width: 1055px) {
-	.page-grid {
-		width: 1055px;
-		margin: 0 auto;
-		padding: 15px;
-	}
-}
-
+/* Font Icon
+================*/
 
 .icon {
 	font-family:'Clappr';
@@ -114,14 +115,14 @@ html, body {
 }
 
 .icon.logo:before {
-  color: white;
-  font-size: 1.7em;
+	color: white;
+	font-size: 1.7em;
 	content: "\e001";
 }
 
 span.icon.logo {
-  display: block;
-  position: relative;
+	display: block;
+	position: relative;
 }
 
 .icon.github:before {
@@ -136,6 +137,9 @@ span.icon.logo {
 	content: "\e004";
 }
 
+/* Block Style
+================*/
+
 .block {
 	color: rgb(54, 54, 54);
 	display: inline-block;
@@ -144,25 +148,94 @@ span.icon.logo {
 	text-align: center;
 	margin-left: 0.48%;
 	margin-right: 0.48%;
-	margin-top: 75px;
 	padding: 15px;
 }
 
 .block h2 {
-  line-height: 2;
+	line-height: 2;
 }
 
-@media(max-width: 768px) {
-	.block {
-		width: 100%;
-	}
+/* Code block
+=================*/
+
+.code-block .code-embedded {
+	margin: 0 auto;
+	min-height: 150px;
+	width: 80%;
+	background: rgb(40, 40, 40);
 }
+
+.code-block h2 {
+	color: white;
+	font-weight: normal;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Whos use block
+================*/
+
+.whos-use {
+
+}
+
+.whos-use h2 {
+	text-align: center;
+	color: rgb(54, 54, 54);
+	margin-bottom: 50px;
+}
+.whos-use img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 80%;
+}
+
 
 @media(min-width: 768px) {
-	.block {
-		min-height: 330px;
+
+	.whos-use img {
+		display: inline-block;
+		margin-left: 6%;
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.whos-use .img-container {
+		margin: 0 auto;
+		width: 50%;
 	}
 }
+
+@media(min-width: 823px) and (max-width: 1000px) {
+
+	.whos-use {
+		background: black;
+	}
+
+	.whos-use img {
+		display: inline-block;
+		margin-left: 8%;
+		width: auto;
+
+	}
+}
+
+
+@media(min-width: 1000px) {
+
+	.whos-use img {
+		display: inline-block;
+		margin-left: 13%;
+		width: auto;
+	}
+}
+
+
+/* Top message
+================*/
+
 .page-message {
 	text-align: center;
 	padding: 25% 0 0 0;
@@ -175,16 +248,52 @@ span.icon.logo {
 }
 
 .page-message h2 {
-  position: relative;
-  top: 25px;
+	position: relative;
+	top: 25px;
 	color: white;
 	font-weight: normal;
 	display: block;
 }
 
+/* Media Queries
+================*/
+
 @media(max-width: 480px) {
 	.page-message h1 img {
-	  font-size: 9em;
+		font-size: 9em;
 	}
 
+}
+
+@media(max-width: 767px) {
+	.page-grid {
+		width: 95%;
+	}
+
+	.block {
+		margin-top: 75px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1054px) {
+	.page-grid {
+		width: 100%;
+	}
+}
+
+@media(min-width: 1055px) {
+	.page-grid {
+		width: 1055px;
+		margin: 0 auto;
+		padding: 15px;
+	}
+}
+
+@media(max-width: 768px) {
+	.block {
+		width: 100%;
+	}
+}
+
+@media(min-width: 768px) {
 }
