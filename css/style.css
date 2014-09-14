@@ -24,11 +24,33 @@ html, body {
   text-shadow: 0 0 5px rgba(0,0,0,0.75);
 }
 
+.button {
+  background: transparent;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  outline:none;
+  cursor: pointer;
+}
+
+#view-on-github:active{
+  margin-top: 2px;
+}
+
 .page-container {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
 }
+
+.buttons {
+  position: relative;
+  display: inline-block;
+  top: 50px;
+}
+
 
 .page-img-full {
 	width: 100%;
