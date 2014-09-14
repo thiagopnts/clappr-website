@@ -76,7 +76,6 @@ html, body {
 
 
 .icon {
-
 	font-family:'Clappr';
 	font-weight: normal;
 	font-size: 15em;
@@ -87,11 +86,17 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 	display: block;
 	height: 50px;
-
 }
 
 .icon.logo:before {
+  color: white;
+  font-size: 1.7em;
 	content: "\e001";
+}
+
+span.icon.logo {
+  display: block;
+  position: relative;
 }
 
 .icon.github:before {
@@ -131,7 +136,7 @@ html, body {
 }
 .page-message {
 	text-align: center;
-	padding: 20% 0 0 0;
+	padding: 25% 0 0 0;
 }
 
 .page-message h1, {
@@ -141,8 +146,11 @@ html, body {
 }
 
 .page-message h2 {
+  position: relative;
+  top: 25px;
 	color: white;
 	font-weight: normal;
+	display: block;
 }
 
 @media(max-width: 480px) {
