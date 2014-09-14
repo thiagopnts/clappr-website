@@ -64,7 +64,7 @@ html, body {
 }
 @media(min-width: 960px) {
 	.page-grid {
-		width: 960px;
+		width: 1055px;
 		margin: 0 auto;
 		background: #eee;
 		padding: 15px;
