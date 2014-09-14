@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Clappr';
+  src: url('fonts/Clappr-Regular.eot');
+  src: url('fonts/Clappr-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Clappr-Regular.ttf') format('truetype'),
+       url('fonts/Clappr-Regular.svg#clappr') format('svg');
+}
 
 * {
 	padding: 0;
@@ -66,8 +73,32 @@ html, body {
 
 
 .icon {
+  font-family:'Clappr';
+  font-weight: normal;
+  font-size: 15em;
+  font-style: normal;
+  line-height: 0.7;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: block;
   height: 50px;
+}
+
+.icon.logo:before {
+  content: "\e001";
+}
+
+.icon.github:before {
+  content: "\e002";
+}
+
+.icon.extensible:before {
+  content: "\e003";
+}
+
+.icon.batteries:before {
+  content: "\e004";
 }
 
 .block {
