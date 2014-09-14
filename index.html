@@ -12,12 +12,16 @@
 	<div class="page-container">
 
 		<section class="video-container">
+
 			<section class="page-img-full">
-				<div class="page-message">
-					<h1>Watch or Broadcast </h1>
-					<h1>Live Events</h1>
+				<div class="img-layer">
+					<div class="page-message">
+						<h1><img src="images/clappr.svg" alt="clappr" title="Clappr"></h1>
+						<h2>An extensible media player for the web</h2>
+					</div>
 				</div>
 			</section>
+
 		</section>
 
 		<section class="page-body">
@@ -48,13 +52,12 @@
 
 	$(document).ready(function() {
 
-		window.App = {}
+		window.App = {};
 
 		App.init = function() {
 			var container = $(".page-img-full");
 			var windowX = $(window).width();
 			var windowH = $(window).height();
-			var img = "url(images/poster.png)";
 
 			//CSS
 			container.css("display", "block");
@@ -65,7 +68,6 @@
 			} else {
 				container.css("height", "720px");
 			}
-			container.css("background-image", img);
 		}
 
 		window.onresize = function(event) {
