@@ -42,7 +42,7 @@ html, body {
 
 .page-body {
 	width: 100%;
-	background: #ccc;
+	background: rgb(235, 222, 222);
 }
 
 .page-grid {
@@ -54,7 +54,6 @@ html, body {
 	.page-grid {
 		width: 95%;
 	}
-
 }
 @media(min-width: 960px) {
 	.page-grid {
@@ -63,7 +62,23 @@ html, body {
 		background: #eee;
 		padding: 15px;
 	}
+}
 
+
+.icon {
+  display: block;
+  height: 50px;
+}
+
+.block {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 75px;
+  padding: 15px;
+  color: rgb(54, 54, 54);
 }
 
 .page-message {
