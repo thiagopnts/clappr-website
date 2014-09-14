@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Clappr';
-  src: url('fonts/Clappr-Regular.eot');
-  src: url('fonts/Clappr-Regular.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Clappr-Regular.ttf') format('truetype'),
-       url('fonts/Clappr-Regular.svg#clappr') format('svg');
+	font-family: 'Clappr';
+	src: url('fonts/Clappr-Regular.eot');
+	src: url('fonts/Clappr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Clappr-Regular.ttf') format('truetype'),
+	url('fonts/Clappr-Regular.svg#clappr') format('svg');
 }
 
 * {
@@ -57,7 +57,7 @@ html, body {
 }
 
 
-@media(max-width: 959px) {
+@media(max-width: 768px) {
 	.page-grid {
 		width: 95%;
 	}
@@ -73,45 +73,59 @@ html, body {
 
 
 .icon {
-  font-family:'Clappr';
-  font-weight: normal;
-  font-size: 15em;
-  font-style: normal;
-  line-height: 0.7;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: block;
-  height: 50px;
+
+	font-family:'Clappr';
+	font-weight: normal;
+	font-size: 15em;
+	font-style: normal;
+	line-height: 0.7;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: block;
+	height: 50px;
+
 }
 
 .icon.logo:before {
-  content: "\e001";
+	content: "\e001";
 }
 
 .icon.github:before {
-  content: "\e002";
+	content: "\e002";
 }
 
 .icon.extensible:before {
-  content: "\e003";
+	content: "\e003";
 }
 
 .icon.batteries:before {
-  content: "\e004";
+	content: "\e004";
 }
 
 .block {
-  display: inline-block;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  margin-left: 5%;
-  margin-top: 75px;
-  padding: 15px;
-  color: rgb(54, 54, 54);
+	color: rgb(54, 54, 54);
+	display: inline-block;
+	width: 32%;
+	min-height: 200px;
+	text-align: center;
+	margin-left: 0.7%;
+	margin-right: 0.2%;
+	margin-top: 75px;
+	padding: 15px;
 }
 
+@media(max-width: 768px) {
+	.block {
+		width: 100%;
+	}
+}
+
+@media(min-width: 768px) {
+	.block {
+		min-height: 330px;
+	}
+}
 .page-message {
 	text-align: center;
 	padding: 20% 0 0 0;
