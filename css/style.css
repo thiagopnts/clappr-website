@@ -30,12 +30,14 @@ html, body {
   border-radius: 5px;
   border: 2px solid white;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   outline:none;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
 }
 
-#view-on-github:active{
+#view-on-github:active {
   margin-top: 2px;
 }
 
