@@ -43,8 +43,8 @@ html, body {
 
 .page-container {
 	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
+	min-height: 100%;
+	/*overflow-x: hidden;*/
 }
 
 .buttons {
@@ -77,13 +77,101 @@ html, body {
 }
 /* Colors
 ================*/
-
 .default-color {
 	background: rgb(235, 222, 222);
 }
 
 .reverse-color {
 	background: rgb(54, 54, 54);
+}
+
+
+/*	Menu
+================*/
+.page-menu {
+	position: absolute;
+	right: 3%;
+	top: 3%;
+	z-index: 50;
+}
+
+/*menu toggle*/
+.page-menu .menu {
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+
+	width: 45px;
+	padding: 5px;
+
+	display: inline-block;
+	float: right;
+}
+
+.page-menu .menu .menu-line {
+	border-radius: 2px;
+	padding: 3px;
+	margin-bottom: 3px;
+	background: white;
+}
+
+.page-menu .menu .menu-line:first-child {
+	margin-top: 3px;
+}
+
+/*	Menu Container (mobile)
+================*/
+
+.menu-container {
+	background: rgb(54, 54, 54);
+	margin-top: 5px;
+	opacity: 0;
+	transition: all 1s;
+	float: right;
+	clear: both;
+}
+.page-menu .menu-container a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.menu-container.active {
+	opacity: 1;
+	trasition: all 1s;
+}
+
+
+/*	Menu (desktop)
+================*/
+
+@media(min-width: 768px) {
+	.page-menu .menu {
+		display: none;
+	}
+
+	.menu-container {
+		opacity: 1;
+		background: transparent;
+	}
+
+	.page-menu .menu-container a {
+		display: inline-block;
+		padding: 5px 10px;
+		opacity: 0.5;
+		transition: opacity 0.5s;
+	}
+	.page-menu .menu-container a:hover {
+		opacity: 1;
+	}
+
+/*	.page-menu .menu-container a:first-child {
+		border-right: 1px solid white;
+	}
+	.page-menu .menu-container a:nth-child(2) {
+		border-right: 1px solid white;
+	}*/
+
 }
 
 /* Containers
@@ -211,7 +299,7 @@ span.icon.logo {
 @media(min-width: 823px) and (max-width: 1000px) {
 
 	.whos-use {
-		background: black;
+		
 	}
 
 	.whos-use img {
@@ -259,8 +347,8 @@ span.icon.logo {
 ================*/
 
 @media(max-width: 480px) {
-	.page-message h1 img {
-		font-size: 9em;
+	.page-message span.logo {
+		font-size: 8em;
 	}
 
 }

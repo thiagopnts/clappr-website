@@ -15,6 +15,20 @@
 
 			<section class="page-img-full">
 				<div class="img-layer">
+					<nav class="page-menu">
+						<div class="menu">
+							<div class="menu-line"></div>
+							<div class="menu-line"></div>
+							<div class="menu-line"></div>
+						</div>
+
+						<section class="menu-container">
+							<a class="shadow" href="#">Download</a>
+							<a class="shadow" href="#">Documentation</a>
+							<a class="shadow" href="#">Blog</a>
+						</section>
+					</nav>
+
 					<div class="page-message">
 						<span class="icon logo shadow"></span>
 						<h2 class="shadow">An extensible media player for the web</h2>
@@ -64,9 +78,7 @@
 				<article class="code-block">
 					<h2>Embedded Code</h2>
 					<div class="code-embedded">
-						if(you-use-rails) {
-							print("hahaha your framework is so beautiful")
-						}
+
 					</div>
 				</article>
 			</section>
@@ -113,7 +125,22 @@
 			} else {
 				container.css("height", "720px");
 			}
+
 		}
+
+		App.menu = (function() {
+
+			var container = ".menu-container";
+
+			$(".menu").on("click", function() {
+				if ($(container).hasClass("active")) {
+					$(container).removeClass("active");
+				} else {
+					$(container).addClass("active");
+				}
+
+			});
+		})();
 
 		window.onresize = function(event) {
 			App.init();
@@ -123,5 +150,6 @@
 	});
 
 	</script>
+	
 </body>
 </html>
